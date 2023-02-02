@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAdVBMVEX///8AAAC/v7/09PSioqLS0tIwMDD6+vrl5eV7e3vx8fF4eHjLy8tQUFBGRkarq6vY2NiOjo7e3t6EhIS3t7cXFxcMDAyampo+Pj5hYWHb29uwsLDs7OwgICCgoKBXV1dsbGwsLCyJiYm8vLxlZWU3NzckJCSrYnspAAAE5klEQVR4nO2d13KrQAyGg4MDbsENN1xTzvs/4okhTgyIErMrrTT67pmR/lkWrcry9KQoiqIoiqIoimKTPbUBTJj724Pn7ajNYMB04WX0qS1xnuTi3RhT2+I4vneHilVHz8sxpbbHYYaTvFZeSG2Ruyy9ItQWucuopFVMbZKzvJa08rbUNrnKS1krb01tlKNAWunHEKb4GdT9vZoFqNWA2iwneQe10pMhxBDW6oXaLicBgoYrS2q7XKQcuKesqO1yElgrr0dtl4usYa1eqe1ykoqFpfl3gCOslU9tl5PEoFYTarOcpA8vLGqz3GQAaqUZUhBQKz3ngISQVhphwUSqVXvKeXetFVZSTvrNqU1yl1VBqteA2iKHKWilcXsdOalOQ2pz3OZeKq3lNPAj1ZsG7Y0cPO8wWUT6CUwJ5j1/NjiPZlH/ue0zu2gwyYqum8nAH7d+jjXD5SCfgBkljVt4fw2UL0aJdMEisGizWdekQPtAQH8LwCI8y7GZV7vtvfjgOpnOqh/J1pfMnS08Nfh9ei88sV9fGh5JH5P3yQxqVtUv59/kQuiDPTQQ0tofKmqm0EI5ToNgvGitVIqopMTHn1x/gAW1h8YIi2kEC2yonTTE2L5UX8QiDtwJilZfCIhRoYS6HVbsc4QV/XtW+KR2tiMVtWVLnKnd7URFr6M1WJ8V/xZadmZG7W8X3lClilmfqaeoWp2p3e3GAVMr1ttVZfueHZgfpQNMrbhXzODRG9UKAnNhse9HakqeG4T/uCaeVidqVzuDeIBmn2yoGuqyAP85sWc0rQTkk/1mLw0hoON7i6WVgIWF9y1kH2JhJkipPTUA2pYlobhqvQJ9g3myIQVLKwlvIZpYEr6Fcyyx3qg9NUCv2U0z8D/qIJbsJezvaLks1sWvb1q1RJpAQpsRmljUjprgrGK1By3nQO2oCdDE4p9RRhRLwkU+aOdoCffoo23wEoJStNAhofbUAPDFOxaQkPtDO+5IuIgTrxBG7akB0FI0EnZ4vGbSEbWr3cEr3kt4D/HEKo4KM+SCJpaAkgVaCC+hMQQvdhBwgzDO8GoG+9YQ1Gkwamc7gzmJcqZ2titoeYcr3MMHvMnoK8wvWNmjisV98B5XrJh35QIt/ydBLcxIK4VzoQd12jCF87kHrRz2A+PhMLQraH555dtUgy+W5x2pnX6Upiv+rBAzrSTiVS3y8Dz8EInFM2WDOX5/B7XbjwH+5MQ6XCv6GwqxuDYwU2zxfG9nIxCL7/09qFf3ZFC73AF0rThPPiHesZLBOWWKnajh3VSDvLQ4ZwCxlxbvhYXa9cB7x0pB1IrzpzADMYyndtUA5b8VWoJp3i8HVnGa76nwnor/2JuGa7qhAMp11Px39wyMLGBM7aQxEBqQJEwefmO9LMa4Gl3C9qmHf8vyPZavauNbtwexGj8ImA3LYzGQ51r9qsHaD8MEjO+UsBZtse6QrMJS56SQY04RK7GpuM39hoWMPN+iaiPGG2skRe4lDP/jSbRWLQoY23XS6+92/V4yazxRSrhMspa6nPw2KRT+Qr/ujwWcO99bsr9UKAX3Nz5HFbnDE/vCVyuAc2J8rHF9B00v8mwdfYBh/qu4mjX+kamXH5z6FL9b3RMsv3fvw0fScrRynow+r+fLf9uI+TDmIwRhyLuRQ1EURVEURTHCf8eYSCcC+BLCAAAAAElFTkSuQmCC" height="50px" width="100px"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+             <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Service"> Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link">Link</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#contact">Contact</a>
+             </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+<div class="container-fluid p-5 bg-dark text-bg-dark text-center ">
+  <h1 >HELLO IPHONE !</h1>
+</div>
+<br>
+<style>
+ .carousel-inner{
+  width: 100%;
+  height:500px;
+ }
+</style>
+   
+<div id="home">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFoZSKf7DWDFY4SGH2GlsFG846yBPrz72-MljwebFKckCGlubEkoyvw2rmPIOGbOPJoqo&usqp=CAU" alt="images" class="jpg" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Iphone 14 Pro Max</h3>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaNXOf-bA870HF_ScRLj6njfQHlfP3-MWeg&usqp=CAU" alt="iphone " class="jpg" style="width:100%" >
+      <div class="carousel-caption">
+        <h3>Iphone 13 Pro Max</h3>
+       
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBK7CHlrlztoESkhMqjjUnHAmtWPY1NpUq3Q&usqp=CAU" alt="iphone" class="jpg" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Iphone 12 Pro Max</h3>
+        
+      </div>  
+    </div>
+  </div>
+  
+ 
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+     <div id="about">
+     <h2> About Phone </h2>
+     <p>The iPhone is a line of smartphones produced by Apple Inc. which uses Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share.[3]
+
+      The iPhone was the first mobile phone with multi-touch technology.[4] Since the iPhone's launch, it gained larger screen sizes, video-recording, waterproofing, and many accessibility features. Up to iPhone 8 and 8 Plus, iPhones had a single button on the front panel with the Touch ID fingerprint sensor. Since iPhone X, iPhone models have switched to a nearly bezel-less front screen design with Face ID facial recognition, and app switching activated by gestures. Touch ID is still used for the budget iPhone SE series.
+      
+      The iPhone is one of the two largest smartphone platforms in the world alongside Android, and is a large part of the luxury market. The iPhone has generated large profits for Apple, making it one of the world's most valuable publicly traded companies. The first-generation iPhone was described as a "revolution" for the mobile phone industry and subsequent models have also garnered praise.[5] The iPhone has been credited with popularizing the smartphone and slate form factor, and with creating a large market for smartphone apps, or "app economy". As of January 2017, Apple's App Store contained more than 2.2 million applications for the iPhone.</p>
+      <h2> Histroy </h2>
+      <p>Development of an Apple smartphone began in 2004, when Apple started to gather a team of 1,000 employees led by hardware engineer Tony Fadell, software engineer Scott Forstall, and design officer Jony Ive,[6] to work on the highly confidential "Project Purple".[7][8]
+
+       Then-Apple CEO Steve Jobs steered the original focus away from a tablet (which was later revisited in the form of the iPad) towards a phone.[9] Apple created the device during a secretive collaboration with Cingular Wireless (later renamed AT&T Mobility) at the time—at an estimated development cost of US$150 million over thirty months.[10] According to Jobs in 1998, the "i" word in "iMac" (and therefore "iPod", "iPhone" and "iPad") stands for internet, individual, instruct, inform, and inspire.[11][12]
+       
+       Apple rejected the "design by committee" approach that had yielded the Motorola ROKR E1, a largely unsuccessful "iTunes phone" made in collaboration with Motorola. Among other deficiencies, the ROKR E1's firmware limited storage to only 100 iTunes songs to avoid competing with Apple's iPod nano.[13][14] Cingular gave Apple the liberty to develop the iPhone's hardware and software in-house, a rare practice at the time,[15][16] and paid Apple a fraction of its monthly service revenue (until the iPhone 3G),[17] in exchange for four years of exclusive U.S. sales, until 2011.[18]
+       
+       Jobs unveiled the first-generation iPhone to the public on January 9, 2007, at the Macworld 2007 convention at the Moscone Center in San Francisco.[19] The iPhone incorporated a 3.5-inch multi-touch display with few hardware buttons, and ran the iPhone OS operating system with a touch-friendly interface, then marketed as a version of Mac OS X.[20] It launched on June 29, 2007, at a starting price of US$499 in the United States, and required a two-year contract with AT&T.[21]
+       
+       
+       Worldwide iPhone availability:
+         iPhone available since its original release
+         iPhone available since the release of iPhone 3G
+       On July 11, 2008, at Apple's Worldwide Developers Conference (WWDC) 2008, Apple announced the iPhone 3G, and expanded its launch-day availability to twenty-two countries, and it was eventually released in 70 countries and territories.[22][23] The iPhone 3G introduced faster 3G connectivity, and a lower starting price of US$199 (with a two-year AT&T contract).[24] Its successor, the iPhone 3GS, was announced on June 8, 2009, at WWDC 2009, and introduced video recording functionality.[25]
+       
+       
+       First iPhone on display under glass at the January 2007 Macworld show
+       The iPhone 4 was announced on June 7, 2010, at WWDC 2010, and introduced a redesigned body incorporating a stainless steel frame and a rear glass panel.[26] At release, the iPhone 4 was marketed as the "world's thinnest smartphone";[26] it uses the Apple A4 processor, being the first iPhone to use an Apple custom-designed chip. It introduced the Retina display, having four-times the display resolution of preceding iPhones, and was the highest-resolution smartphone screen at release;[26] a front-facing camera was also introduced, enabling video calling functionality via FaceTime.</p>
+    </div>
+    <div id="Service">
+      <h3>IPHONE SERVICES </h3>        
+      <p>1.Back up your iOS device. To protect your data, erase your iOS device.
+       2.Remove your iOS device from your Apple ID device list.
+       3.Remove the SIM card from your iOS device or iPadOS device if it uses one, and keep it in a safe place.
+       4.Go to Settings > Cellular and check to see if your cellular line is turned on. If your cellular line is off, turn it back on. Then check to see if you have service. If you don't see your cellular line in Settings > Cellular, you should set up an eSIM or insert a physical SIM card.</p>
+     </div>
+    <div id="link">
+     <h1> Link </h1>
+     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="https://www.apple.com/in/" target="_blank" class="w3-hover-text-green"> Mayur </a> <---  CLick here for more information about Iphone.</p>
+      </footer>
+    </div>
+    <table id="contact" border="0" width="100%"
+    cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+    <tr>
+     <td>
+      <table border="0" cellpadding="15"
+       cellspacing="0" width="80%" align="center">
+       <tr>
+        <td height="180" align="center"
+         valign="middle" colspan="2">
+         <font face="Verdana" size="7"
+          color="black">
+          Contact
+         </font>
+         <hr color="black" width="90">
+        </td>
+       </tr>
+  
+       <tr>
+        <td align="center" valign="top">
+         <table border="0" width="50%" cellpadding="15"
+          cellspacing="0" align="center" bgcolor="black">
+          <tr>
+           <td width="30%">
+            <hr color="black">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             Name
+            </font>
+           </td>
+           <td width="70%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             <input type="text" size="40">
+            </font>
+           </td>
+          </tr>
+          <tr>
+           <td width="30%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             Email
+            </font>
+           </td>
+           <td width="70%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             <input type="email" size="40">
+            </font>
+           </td>
+          </tr>
+          <tr>
+           <td width="30%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             Number
+            </font>
+           </td>
+           <td width="70%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             <input type="number" size="12">
+            </font>
+           </td>
+          </tr>
+          <tr>
+           <td width="30%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             Message
+            </font>
+           </td>
+           <td width="70%">
+            <font face="Verdana" size="4"
+             color="#ffffff">
+             <textarea rows="5"
+              cols="37">
+             </textarea>
+            </font>
+           </td>
+          </tr>
+          <tr>
+           <td width="30%">
+            
+           </td>
+           <td width="70%">
+            <button type="Submit">
+             <font face="Verdana"
+              size="4" color="black">
+              <b>Submit</b>
+             </font>
+            </button>
+            <hr color="black">
+            <hr color="black">
+           </td>
+          </tr>
+         </table>
+        </td>
+  
+       </tr>
+       <tr>
+        <td colspan="2">
+         
+         
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+</body>
+</html>
