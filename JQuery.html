@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Scroll to the top of the page with jQuery</title>
+</head>
+<body>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+  <p>jquery</p>
+<a href='#top'>Go Top</a>  
+<hr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(document).bind("contextmenu",function(e){
+      return false;
+   });
+});
+</script>
+
+<p>Right click is disabled on this page.</p>
+<hr>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>  
+  
+  
+      
+    <h1 style = "color:green;" >  
+        GeeksForGeeks  
+    </h1> 
+      
+    <p id = "GFG_UP" style = 
+            "font-size: 15px; font-weight: bold;"> 
+    </p>
+      
+    <button onclick = "GFG_Fun()">
+        click here
+    </button>
+      
+    <p id = "GFG_DOWN" style = 
+        "font-size: 20px; font-weight: bold; color:green;"> 
+    </p>
+      
+    <script>  
+        var el_up = document.getElementById('GFG_UP');
+        var el_down = document.getElementById('GFG_DOWN');
+          
+        el_up.innerHTML = "Click on the button to start "
+                        + "the text blinking.";
+        el_down.innerHTML = "Binking Text";
+          
+        function GFG_Fun() {
+            $('#GFG_DOWN').each(function() {
+                var elem = $(this);
+                setInterval(function() {
+                    if (elem.css('visibility') == 'hidden') {
+                        elem.css('visibility', 'visible');
+                    } else {
+                        elem.css('visibility', 'hidden');
+                    }    
+                }, 100);
+            });
+        }
+    </script>
+    <hr>
+    <script type="text/javascript" src=
+    "https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $("table tr:nth-child(odd)")
+            .addClass("zebrastripe");
+    });
+</script>
+
+<style type="text/css">
+    body,
+    td {
+        font-size: 10pt;
+        text-align: center;
+    }
+      
+    h1 {
+        color: green;
+    }
+      
+    table {
+        background-color: black;
+        border: 1px black solid;
+        border-collapse: collapse;
+    }
+      
+    th {
+        font-size: 15px;
+        padding: 5px 8px;
+        border: 1px outset silver;
+        background-color: rgb(197, 69, 69);
+        color: white;
+    }
+      
+    tr {
+        border: 1px outset silver;
+        padding: 5px 8px;
+        background-color: white;
+        margin: 1px;
+    }
+      
+    tr.zebrastripe {
+        background-color: green;
+    }
+      
+    td {
+        border: 0.5px outset silver;
+        border-collapse: collapse;
+        padding: 5px 8px;
+    }
+      
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+
+<body>
+<h1>
+    GeeksforGeeks
+</h1>
+<table class="center">
+    <tr>
+        <th>ID</th>
+        <th>Course</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Fork CPP</td>
+        <td>Free</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>DSA</td>
+        <td>2499</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Fork Java</td>
+        <td>Free</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Linux</td>
+        <td>599</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Fork Python</td>
+        <td>Free</td>
+    </tr>
+</table>
+<hr>
+<center>
+    <h1>Hello GeeksForGeeks Users</h1>
+
+    <h3>
+        How to. print a page using jQuery.?
+    </h3>
+
+    <Button id="sudo" onclick=
+        "print_current_page()" />
+        Print!
+    </button>
+</center>
+<hr>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $("p").each(function () {
+                var txt = $(this);
+                txt.html(txt.text()
+                .replace(/(^w+)/, '<strong>$1</strong>'));
+            });
+        });
+    </script>
+</head>
+  
+
+    <h1 style="color: green;">
+        GeeksforGeeks
+    </h1>
+  
+    <h3>
+        How to make first word bold of
+        all elements using jQuery?
+    </h3>
+      
+    <p>GFG is a computer science portal</p>
+   
+    <p>Computer Science Portal</p>
+<hr>
+<script src="https://code.jquery.com/jquery-git.js">
+</script>
+
+<style>
+    .divClass {
+        height: 40px;
+        width: 200px;
+        border: 1px solid blue;
+        color: white
+    }
+</style>
+
+<h2 style="color:green">GeeksforGeeks</h2>
+<div id="parent">
+    This is parent div
+</div>
+<div style="height:10px;"></div>
+
+<input type="button" value="Add <div> Text" onclick="addText()" />
+<script>
+    <!-- Function to add text in a div element with above styles-->
+    function addText() {
+        $(document).ready(function() {
+
+            var object = {
+                id: "divID",
+                class: "divClass",
+                css: {
+                    "color": "Red"
+                }
+            };
+            var addition = $("<div>", object);
+            addition.html("Added text GFG");
+            $("#parent").append(addition);
+        });
+    }
+</script>
+<hr>
+<script src=
+"https://code.jquery.com/jquery-git.js">
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  
+    <style>
+      body {
+        text-align: center;
+      }
+      #nonSelected {
+        position: absolute;
+        top: 150px;
+        left: 350px;
+        width: 250px;
+        height: 280px;
+        background-color: lightblue;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+        padding: 10px;
+      }
+  
+      #selected {
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        width: 250px;
+        height: 280px;
+        background-color: lightgreen;
+        font-style: italic;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+      }
+    </style>
+  
+    <h2 style="color: green">GeeksforGeeks</h2>
+    <b>Make groups of three colors.</b>
+  
+    <div id="nonSelected">
+      <div id="div1" onclick="move(this)" 
+           style="background-color: green">
+        Inner division one
+      </div>
+      <div id="div2" onclick="move(this)" 
+           style="background-color: blue">
+        Inner division two
+      </div>
+      <div id="div3" onclick="move(this)" 
+           style="background-color: red">
+        Inner division three
+      </div>
+      <div id="div1" onclick="move(this)" 
+           style="background-color: green">
+        Inner division one
+      </div>
+      <div id="div2" onclick="move(this)" 
+           style="background-color: blue">
+        Inner division two
+      </div>
+      <div id="div3" onclick="move(this)" 
+           style="background-color: red">
+        Inner division three
+      </div>
+      <div id="div1" onclick="move(this)" 
+           style="background-color: green">
+        Inner division one
+      </div>
+      <div id="div2" onclick="move(this)" 
+           style="background-color: blue">
+        Inner division two
+      </div>
+      <div id="div3" onclick="move(this)" 
+           style="background-color: red">
+        Inner division three
+      </div>
+      <div id="div1" onclick="move(this)" 
+           style="background-color: green">
+        Inner division one
+      </div>
+      <div id="div2" onclick="move(this)" 
+           style="background-color: blue">
+        Inner division two
+      </div>
+      <div id="div3" onclick="move(this)" 
+           style="background-color: red">
+        Inner division three
+      </div>
+      <div id="div1" onclick="move(this)" 
+           style="background-color: green">
+        Inner division one
+      </div>
+      <div id="div2" onclick="move(this)" 
+           style="background-color: blue">
+        Inner division two
+      </div>
+      <div id="div3" onclick="move(this)" 
+           style="background-color: red">
+        Inner division three
+      </div>
+    </div>
+    <div id="selected"></div>
+    <script>
+      function move(elem) {
+        if ($(elem).parent().attr("id") == "nonSelected") {
+          $(elem).detach().appendTo("#selected");
+        } else {
+          $(elem).detach().appendTo("#nonSelected");
+        }
+      }
+    </script>
+    <hr>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        </script>
+      
+        <style>
+            .btn {
+                width: 66px;
+                height: 21px;
+                margin: 5px;
+                padding: 0px;
+                border-color: #b6b6bb;
+            }
+              
+            #addList {
+                border-color: rgb(183, 252, 252);
+            }
+        </style>
+          
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    var content = $('#addList').val();
+                    var fixingContent = 
+                        '<li>' + content + '</li>';
+                          
+                    $('.List').append(fixingContent);
+                })
+            })
+        </script>
+    
+      
+      
+    
+        <h3 class="head"> Type List to Add</h3>
+        <input type="text" id="addList">
+        <input type="button" name="add" 
+            class="btn" value="Add">
+        </button>
+      
+        <div class="addTask">
+            <ul class="List">
+      
+            </ul>
+        </div>
+        <hr>
+        <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+  
+    <!-- Basic inline styling -->
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        color: green;
+        font-size: 40px;
+      }
+      p {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      button {
+        display: block;
+        cursor: pointer;
+        margin: 5rem auto 0 auto;
+      }
+      select {
+        cursor: pointer;
+      }
+    </style>
+  
+  
+    <h1>GeeksforGeeks</h1>
+    <p>
+       jQuery - Remove all options of select box 
+       then add one option and select it
+    </p>
+  
+    <select id="geek-select">
+      <option value="geek1">GEEK 1</option>
+      <option value="geek2">GEEK 2</option>
+      <option value="geek3">GEEK 3</option>
+      <option value="geek4">GEEK 4</option>
+    </select>
+    <button onclick="removeThenAdd()">
+      Click me to remove all options and then add one option
+    </button>
+    <script type="text/javascript">
+      function removeThenAdd() {      
+        $("#geek-select").find("option").remove().end().append(
+        '<option value = "gfg">GeeksForGeeks</option>');
+      }
+    </script>
+</body>
+</html>
